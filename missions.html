@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Styles, fonts, and web info-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/particles.css">
+    <title>
+        Artemis Program - Missions
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Ewert&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!--Music, Background, and Nav Bars-->
+<body class="audiowide-regular">
+    <audio loop autoplay src="Music/02 Cornfield Chase.mp3"></audio>
+    <div class="page-bg"></div>
+    <div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+    </div>
+    <div class="nav" id="nav">
+        <ul class="nav">
+            <li><a class="nav cur-hover" href="index.html">Home</a></li>
+            <li><a class="nav active cur-hover" href="#">Missions</a></li>
+            <li><a class="nav cur-hover" href="gallery.html">Gallery</a></li>
+            <li><a class="nav cur-hover" href="credits.html">Credits</a></li>
+            <li style="display: flex; align-items: center; margin-left: 15px;">
+                <input class="clickable-element" type="checkbox" id="toggle" class="offscreen" />
+                <label for="toggle" class="switch"></label>
+                <span style="color: white; margin-left: 10px; font-size: 0.8em;">Custom Cursor</span>
+            </li>
+        </ul>
+    </div>
+    <div class="topnav">
+        <a>Menu</a>
+        <div class="topnava">
+            <div id="myLinks">
+                <a class="nav cur-hover" href="index.html">Home</a>
+                <a class="nav cur-hover" href="#">Missions</a>
+                <a class="nav cur-hover" href="gallery.html">Gallery</a>
+                <a class="nav cur-hover active" href="credits.html">Credits</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenuOpen()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <!--Logo and Titles-->
+    <a href="https://www.nasa.gov/" target="_blank">
+        <img src="Images/nasa-logo.png" class="logo">
+    </a>
+    <h2 class="page-wrapper">Artemis Program</h2>
+    <h5 class="page-wrapper">The five missions</h5>
+    <!--Content-->
+    <h6>Artemis I</h6>
+    <h6>Artemis II</h6>
+    <h6>Artemis III</h6>
+    <h6>Artemis IV</h6>
+    <h6>Artemis V</h6>
+    <!--Script-->
+    <script src="JavaScript/main.js"></script>
+</body>
+
+</html>

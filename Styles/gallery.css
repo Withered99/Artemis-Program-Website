@@ -1,0 +1,48 @@
+/*Gallery main*/
+#gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+/*Images*/
+#img1 {
+    filter: saturate(150%);
+}
+
+#img2 {
+    filter: sepia(100%);
+}
+  
+/*Body*/
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+}
+
+img.top {
+    margin-top: 50px;
+}
+img {
+    display: flex;
+    border-radius: 25px;
+    padding: 5px;
+    max-width: 225px;
+    max-height: 225px;
+}
+
+a {
+    display: inline-block;
+    scale: 1;
+    transition: scale 0.3s ease-out; 
+}
+
+a:hover {
+    scale: 1.025;
+}
