@@ -1,33 +1,21 @@
-// Audio Persistent Sync Code
-const audio = document.getElementById('myAudio');
 
-if (audio) {
-    // 1. Check if there is a saved time and state on page load
-    const savedTime = localStorage.getItem('audioTime');
-    const isPlaying = localStorage.getItem('audioPlaying') === 'true';
+//Small amount of JavaScript to toggle custom cursor
+const cursorToggle = document.getElementById('toggle');
 
-    if (savedTime) {
-        audio.currentTime = parseFloat(savedTime);
+cursorToggle.addEventListener('change', () => {
+    if (cursorToggle.checked) {
+        document.body.classList.add('custom-cursor-active');
+    } else {
+        document.body.classList.remove('custom-cursor-active');
     }
+});
 
-    // Attempt to resume playback if it was playing on the last page
-    if (isPlaying) {
-        audio.play().catch(error => {
-            console.log("Autoplay blocked by browser. User must click the page first.");
-        });
+//Switch Between mobile and desktop nav bar
+function mobileMenuOpen() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
-
-    // 2. Continually save the track time as it plays
-    audio.addEventListener('timeupdate', () => {
-        localStorage.setItem('audioTime', audio.currentTime);
-    });
-
-    // 3. Track if the user paused or played the music
-    audio.addEventListener('play', () => {
-        localStorage.setItem('audioPlaying', 'true');
-    });
-
-    audio.addEventListener('pause', () => {
-        localStorage.setItem('audioPlaying', 'false');
-    });
-}
+  }
