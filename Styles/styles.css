@@ -84,12 +84,17 @@ a, a:visited, a:hover, a:active .credits {
     color: white;
 }
 /*Body*/
+.p {
+  margin-top: 0px;
+  padding-top: 0px;
+}
 html,
 body {
     min-height: 100%;
     margin: 0;
     padding: 0;
     line-height: 0;
+    text-align: center;
 }
 /*Cursor*/
 body.custom-cursor-active, 
@@ -126,6 +131,7 @@ div.nav {
     top: 0;
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
   
   ul li a.nav {
@@ -297,3 +303,4 @@ h4:hover {
       overflow-x: hidden;
       overflow-y: hidden;
   }
+  
