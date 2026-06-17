@@ -61,3 +61,34 @@
         transform: translateY(-2560px);
     }
 }
+.animation-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; 
+    overflow-x: hidden; /* Prevents horizontal scrollbars */
+    overflow-y: auto;   /* Enables vertical scrolling when content exceeds height */
+}
+.page-bg {
+    position: fixed; /* Keeps background image fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Behind particles */
+    background-size: cover;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
